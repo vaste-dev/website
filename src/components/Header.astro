@@ -12,21 +12,19 @@ import Hamburguer from './Hamburguer.astro'
       href="/"
       aria-label="Free Astro components"
     >
-      <img src="/logo.svg" width="30" height="30" alt="Logo">
+      <img src="/logo.svg" width="30" height="30" alt="Logo" />
     </a>
 
     <nav>
       <ul class="flex items-center gap-8">
         <li>
-          <a
-            class="text-sm hover:text-primary transition duration-300 ease-in-out"
-            href="/guide/installation">Documentation</a
+          <a class="text-sm hover:text-primary transition duration-300 ease-in-out" href="/guide/installation"
+            >Documentation</a
           >
         </li>
         <li class="hidden lg:block">
-          <a
-            class="text-sm hover:text-primary transition duration-300 ease-in-out"
-            href="/components/button">Components</a
+          <a class="text-sm hover:text-primary transition duration-300 ease-in-out" href="/components/button"
+            >Components</a
           >
         </li>
         <li>
@@ -45,9 +43,7 @@ import Hamburguer from './Hamburguer.astro'
 
   DOMLoaded(() => {
     const body = document.querySelector('body') as HTMLElement
-    const hamburguer = document.querySelector(
-      '[data-hamburguer]'
-    ) as HTMLButtonElement
+    const hamburguer = document.querySelector('[data-hamburguer]') as HTMLButtonElement
     const nav = document.querySelector('[data-nav]') as HTMLElement
 
     hamburguer.addEventListener('click', () => {

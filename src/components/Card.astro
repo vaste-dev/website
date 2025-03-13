@@ -10,9 +10,7 @@ interface Props {
 
 const { icon, title, description } = Astro.props
 
-const cardClasses = [
-  'flex flex-col gap-8 h-full bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl p-8',
-]
+const cardClasses = ['flex flex-col gap-8 h-full bg-gradient-to-r from-primary/10 to-secondary/10 rounded-3xl p-8']
   .filter(Boolean)
   .join(' ')
 

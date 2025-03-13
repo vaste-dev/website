@@ -30,44 +30,31 @@ import Text from '../../components/Text.astro'
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="Tab"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="Tab" />
         <Prose>
           <Text>
-            The Tab component provides a way to organize content into different
-            sections, each accessible through a tab. It includes the TabItem
-            subcomponent for defining the content of each tab.
+            The Tab component provides a way to organize content into different sections, each accessible through a tab.
+            It includes the TabItem subcomponent for defining the content of each tab.
           </Text>
         </Prose>
         <Prose>
           <Heading level={2} text="Import" />
-          <Text>
-            To use the Tab component, first import it into your project:
-          </Text>
+          <Text> To use the Tab component, first import it into your project: </Text>
           <CodeBlock lang="astro" code={importCode} />
         </Prose>
         <Prose>
           <Heading level={2} text="Usage" />
-          <Text>
-            Here’s how you can use the Tab component in your Astro project:
-          </Text>
+          <Text> Here’s how you can use the Tab component in your Astro project: </Text>
           <Heading level={3} text="Basic Usage" />
           <Text>
-            The Tab component requires a <code>tabs</code> attribute to define the
-            tab labels and their active state. Each tab is associated with a corresponding
+            The Tab component requires a <code>tabs</code> attribute to define the tab labels and their active state. Each
+            tab is associated with a corresponding
             <code>TabItem</code> component.
           </Text>
           <TabAc tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
               <Preview>
-                <TabAc
-                  tabs={[{ label: 'Tab 1', active: true }, { label: 'Tab 2' }]}
-                >
+                <TabAc tabs={[{ label: 'Tab 1', active: true }, { label: 'Tab 2' }]}>
                   <TabItem active>Content for Tab 1</TabItem>
                   <TabItem>Content for Tab 2</TabItem>
                 </TabAc>
@@ -79,9 +66,7 @@ import Text from '../../components/Text.astro'
           </TabAc>
           <Text>
             In the above example, <code>Tab 1</code> is marked as active by setting
-            <code>active: true</code> in the tabs array, and the corresponding <code
-              >TabItem</code
-            > also has the
+            <code>active: true</code> in the tabs array, and the corresponding <code>TabItem</code> also has the
             <code>active</code> attribute.
           </Text>
         </Prose>
@@ -97,17 +82,14 @@ import Text from '../../components/Text.astro'
           <List>
             <ListItem>
               <Text>
-                <strong>Keyboard Navigation</strong>: Ensure that the tab list
-                is navigable using the keyboard. Users should be able to move
-                focus between tabs using the arrow keys.
+                <strong>Keyboard Navigation</strong>: Ensure that the tab list is navigable using the keyboard. Users
+                should be able to move focus between tabs using the arrow keys.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
                 <strong>ARIA Attributes</strong>: Use <code>aria-controls</code>
-                to link each tab with its corresponding panel and <code
-                  >aria-selected</code
-                > to indicate the active tab.
+                to link each tab with its corresponding panel and <code>aria-selected</code> to indicate the active tab.
               </Text>
             </ListItem>
           </List>

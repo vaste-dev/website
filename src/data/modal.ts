@@ -190,7 +190,7 @@ export const tableRows = [
     {
       head: 'Type',
       label:
-        "<code>'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | 'full'</code>",
+        '<code>\'xs\' | \'sm\' | \'md\' | \'lg\' | \'xl\' | \'2xl\' | \'3xl\' | \'4xl\' | \'full\'</code>',
     },
     {
       head: 'Description',

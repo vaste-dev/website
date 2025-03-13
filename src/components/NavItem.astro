@@ -6,9 +6,7 @@ const { title, open } = Astro.props
 
 <li>
   <details class="group" open={open}>
-    <summary
-      class="flex items-center list-none [&::-webkit-details-marker]:hidden cursor-pointer py-1"
-    >
+    <summary class="flex items-center list-none [&::-webkit-details-marker]:hidden cursor-pointer py-1">
       <span class="flex-1 font-medium">{title}</span>
       <Icon
         icon="chevron-right"

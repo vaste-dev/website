@@ -34,33 +34,21 @@ import Table from '../../components/Table.astro'
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="Button"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="Button" />
         <Prose>
           <Text>
-            The button component is a versatile UI element for triggering
-            actions or navigating through your application. Below are the
-            available configurations and usage examples.
+            The button component is a versatile UI element for triggering actions or navigating through your
+            application. Below are the available configurations and usage examples.
           </Text>
         </Prose>
         <Prose>
           <Heading level={2} text="Import" />
-          <Text>
-            To use the button component, first import it into your project:
-          </Text>
+          <Text> To use the button component, first import it into your project: </Text>
           <CodeBlock lang="astro" code={importCode} />
         </Prose>
         <Prose>
           <Heading level={2} text="Usage" />
-          <Text>
-            To button component can be easily added to your project. Below are
-            various use cases.
-          </Text>
+          <Text> To button component can be easily added to your project. Below are various use cases. </Text>
           <Heading level={3} text="Basic Usage" />
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
@@ -90,9 +78,7 @@ import Table from '../../components/Table.astro'
           </Tab>
           <Heading level={3} text="Sizes" />
           <Text>
-            The component supports two sizes: <code>medium</code> and <code
-              >small</code
-            >.
+            The component supports two sizes: <code>medium</code> and <code>small</code>.
           </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
@@ -128,24 +114,13 @@ import Table from '../../components/Table.astro'
             </TabItem>
           </Tab>
           <Heading level={3} text="With Icon" />
-          <Text>
-            You can add an icon to the button, either on the left or right side
-            of the label.
-          </Text>
+          <Text> You can add an icon to the button, either on the left or right side of the label. </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
               <Preview>
                 <div class="flex items-center flex-wrap gap-4">
-                  <ButtonAc
-                    label="Button"
-                    icon="arrow-left"
-                    iconPosition="left"
-                  />
-                  <ButtonAc
-                    label="Button"
-                    icon="arrow-right"
-                    iconPosition="right"
-                  />
+                  <ButtonAc label="Button" icon="arrow-left" iconPosition="left" />
+                  <ButtonAc label="Button" icon="arrow-right" iconPosition="right" />
                 </div>
               </Preview>
             </TabItem>
@@ -173,17 +148,13 @@ import Table from '../../components/Table.astro'
         <Prose>
           <Heading level={2} text="Custom Styles" />
           <Text>
-            The button component offers various CSS variables that you can
-            customize to match your design needs. Below are the available
-            variables and an example of how to use them:
+            The button component offers various CSS variables that you can customize to match your design needs. Below
+            are the available variables and an example of how to use them:
           </Text>
           <Heading level={3} text="Available Variables" />
           <CodeBlock lang="css" code={customVariablesCode} />
           <Heading level={3} text="Example Customization" />
-          <Text>
-            To customize the button styles, you can override these variables in
-            your CSS:
-          </Text>
+          <Text> To customize the button styles, you can override these variables in your CSS: </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
               <Preview>
@@ -206,22 +177,20 @@ import Table from '../../components/Table.astro'
           <List>
             <ListItem>
               <Text>
-                <strong>Keyboard Accessibility</strong>: Ensure that all buttons
-                are reachable and operable using a keyboard. Focus should be
-                clearly visible, and buttons should respond to keyboard events.
+                <strong>Keyboard Accessibility</strong>: Ensure that all buttons are reachable and operable using a
+                keyboard. Focus should be clearly visible, and buttons should respond to keyboard events.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>ARIA Attributes</strong>: Use appropriate ARIA roles and
-                attributes to convey the button's purpose and state to assistive
-                technologies.
+                <strong>ARIA Attributes</strong>: Use appropriate ARIA roles and attributes to convey the button's
+                purpose and state to assistive technologies.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>Visual Clarity</strong>: Buttons should have sufficient
-                contrast against their background to be easily distinguishable.
+                <strong>Visual Clarity</strong>: Buttons should have sufficient contrast against their background to be
+                easily distinguishable.
               </Text>
             </ListItem>
           </List>
@@ -236,10 +205,6 @@ import Table from '../../components/Table.astro'
     --ac-btn-border-radius: 999px;
     --ac-btn-font-weight: 600;
     border-width: 0;
-    background-image: linear-gradient(
-      90deg,
-      rgb(var(--ac-primary)) 0%,
-      rgb(var(--ac-secondary)) 100%
-    );
+    background-image: linear-gradient(90deg, rgb(var(--ac-primary)) 0%, rgb(var(--ac-secondary)) 100%);
   }
 </style>

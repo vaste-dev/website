@@ -33,7 +33,7 @@ export const tableTabRows = [
     {
       head: 'Default',
       label:
-        "<code>[{ label: 'tab 1', active: true }, { label: 'tab 2' }]</code>",
+        '<code>[{ label: \'tab 1\', active: true }, { label: \'tab 2\' }]</code>',
     },
   ],
   [

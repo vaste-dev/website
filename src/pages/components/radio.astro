@@ -1,11 +1,5 @@
 ---
-import {
-  basicUsageCode,
-  statesCode,
-  importCode,
-  tableHead,
-  tableRows,
-} from '../../data/radio.ts'
+import { basicUsageCode, statesCode, importCode, tableHead, tableRows } from '../../data/radio.ts'
 import { Radio as RadioAc, Tab, TabItem } from 'free-astro-components'
 import Article from '../../components/Article.astro'
 import CodeBlock from '../../components/CodeBlock.astro'
@@ -28,32 +22,21 @@ import Table from '../../components/Table.astro'
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="Radio"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="Radio" />
         <Prose>
           <Text>
-            The radio component allows users to select one option from a set of
-            choices. It supports various configurations and customization
-            options.
+            The radio component allows users to select one option from a set of choices. It supports various
+            configurations and customization options.
           </Text>
         </Prose>
         <Prose>
           <Heading level={2} text="Import" />
-          <Text>
-            To use the radio component, first import it into your project:
-          </Text>
+          <Text> To use the radio component, first import it into your project: </Text>
           <CodeBlock lang="astro" code={importCode} />
         </Prose>
         <Prose>
           <Heading level={2} text="Usage" />
-          <Text>
-            Here’s how you can use the radio component in your Astro project:
-          </Text>
+          <Text> Here’s how you can use the radio component in your Astro project: </Text>
           <Heading level={3} text="Basic Usage" />
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
@@ -66,10 +49,7 @@ import Table from '../../components/Table.astro'
             </TabItem>
           </Tab>
           <Heading level={3} text="States" />
-          <Text>
-            The component supports different states to indicate whether it is
-            selected or unselected.
-          </Text>
+          <Text> The component supports different states to indicate whether it is selected or unselected. </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
               <Preview>
@@ -96,23 +76,20 @@ import Table from '../../components/Table.astro'
           <List>
             <ListItem>
               <Text>
-                <strong>Keyboard Accessibility</strong>: Ensure that the radio
-                button can be toggled using keyboard interactions (e.g., Arrow
-                keys for navigation and Space key for selection).
+                <strong>Keyboard Accessibility</strong>: Ensure that the radio button can be toggled using keyboard
+                interactions (e.g., Arrow keys for navigation and Space key for selection).
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>ARIA Attributes</strong>: Use <code>aria-checked</code> to
-                indicate the state of the radio button and <code
-                  >aria-disabled</code
-                > for the disabled state.
+                <strong>ARIA Attributes</strong>: Use <code>aria-checked</code> to indicate the state of the radio button
+                and <code>aria-disabled</code> for the disabled state.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>Labeling</strong>: Ensure that each radio button has a
-                label associated with it for screen readers.
+                <strong>Labeling</strong>: Ensure that each radio button has a label associated with it for screen
+                readers.
               </Text>
             </ListItem>
           </List>

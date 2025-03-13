@@ -27,19 +27,11 @@ const exampleCode = `
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="Available Icons"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="Available Icons" />
         <Prose>
           <Text>
-            Welcome to the icon library. Below, you'll find a list of all
-            available icons that you can use with our components. Each icon can
-            be selected by using its name in the <code>icon</code> attribute of the
-            component.
+            Welcome to the icon library. Below, you'll find a list of all available icons that you can use with our
+            components. Each icon can be selected by using its name in the <code>icon</code> attribute of the component.
           </Text>
           <CodeBlock lang="astro" code={exampleCode} />
         </Prose>
@@ -48,9 +40,7 @@ const exampleCode = `
           <ul class="flex flex-col gap-8">
             {
               iconsCategories.map((category) => {
-                const categoryIcons = icons.filter(
-                  (icon) => icon.category === category
-                )
+                const categoryIcons = icons.filter((icon) => icon.category === category)
 
                 return categoryIcons.length > 0 ? (
                   <li class="flex flex-col gap-4">
@@ -59,13 +49,8 @@ const exampleCode = `
                       {categoryIcons.map((icon) => (
                         <li>
                           <IconCard>
-                            <IconAc
-                              icon={icon.name}
-                              class="w-8 h-8 text-primary"
-                            />
-                            <span class="text-neutral-500 text-sm">
-                              {icon.name}
-                            </span>
+                            <IconAc icon={icon.name} class="w-8 h-8 text-primary" />
+                            <span class="text-neutral-500 text-sm">{icon.name}</span>
                           </IconCard>
                         </li>
                       ))}
@@ -79,10 +64,8 @@ const exampleCode = `
         <Prose>
           <Heading level={2} text="Using Icons" />
           <Text>
-            To learn more about how to use these icons in your components,
-            including customization options, please refer to the <Link
-              href="/components/icon">Icon Component Documentation.</Link
-            >
+            To learn more about how to use these icons in your components, including customization options, please refer
+            to the <Link href="/components/icon">Icon Component Documentation.</Link>
           </Text>
         </Prose>
         <Prose>
@@ -90,16 +73,16 @@ const exampleCode = `
           <List>
             <ListItem>
               <Text>
-                <strong>Icon Name</strong>: Use the <code>icon</code> attribute with
-                the icon name (e.g., <code>icon="star"</code>) to display the
-                desired icon.
+                <strong>Icon Name</strong>: Use the <code>icon</code> attribute with the icon name (e.g., <code
+                  >icon="star"</code
+                >) to display the desired icon.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>Customization</strong>: ou can style the icons using CSS
-                classes, such as <code>custom-class</code>, to adjust size and
-                color.
+                <strong>Customization</strong>: ou can style the icons using CSS classes, such as <code
+                  >custom-class</code
+                >, to adjust size and color.
               </Text>
             </ListItem>
           </List>

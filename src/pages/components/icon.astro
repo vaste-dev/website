@@ -1,11 +1,5 @@
 ---
-import {
-  basicUsageCode,
-  customizationCode,
-  importCode,
-  tableHead,
-  tableRows,
-} from '../../data/icon.ts'
+import { basicUsageCode, customizationCode, importCode, tableHead, tableRows } from '../../data/icon.ts'
 import { Icon as IconAc, Tab, TabItem } from 'free-astro-components'
 import Article from '../../components/Article.astro'
 import CodeBlock from '../../components/CodeBlock.astro'
@@ -29,37 +23,23 @@ import Text from '../../components/Text.astro'
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="Icon"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="Icon" />
         <Prose>
           <Text>
-            The icon component provides a consistent way to display icons
-            throughout your Astro projects. It includes a set of predefined
-            icons that you can style using CSS.
+            The icon component provides a consistent way to display icons throughout your Astro projects. It includes a
+            set of predefined icons that you can style using CSS.
           </Text>
         </Prose>
         <Prose>
           <Heading level={2} text="Import" />
-          <Text>
-            To use the icon component, first import it into your project:
-          </Text>
+          <Text> To use the icon component, first import it into your project: </Text>
           <CodeBlock lang="astro" code={importCode} />
         </Prose>
         <Prose>
           <Heading level={2} text="Usage" />
-          <Text>
-            Here’s how you can use the icon component in your Astro project:
-          </Text>
+          <Text> Here’s how you can use the icon component in your Astro project: </Text>
           <Heading level={3} text="Basic Usage" />
-          <Text>
-            To display an icon, you must use a CSS class to define the icon's
-            size and color.
-          </Text>
+          <Text> To display an icon, you must use a CSS class to define the icon's size and color. </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
               <Preview>
@@ -71,14 +51,12 @@ import Text from '../../components/Text.astro'
             </TabItem>
           </Tab>
           <Text>
-            In this example, the <code>icon-class</code> should define the desired
-            size and color for the icon.
+            In this example, the <code>icon-class</code> should define the desired size and color for the icon.
           </Text>
           <Heading level={3} text="Customization" />
           <Text>
-            Since the icon component relies on CSS for styling, you can use any
-            CSS properties to style the icons. This includes size, color,
-            margin, etc. Here's an example of a CSS class for customization:
+            Since the icon component relies on CSS for styling, you can use any CSS properties to style the icons. This
+            includes size, color, margin, etc. Here's an example of a CSS class for customization:
           </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
@@ -104,9 +82,9 @@ import Text from '../../components/Text.astro'
           <List>
             <ListItem>
               <Text>
-                <strong>Labeling</strong>: Ensure each icon has an appropriate
-                label for screen readers. Use the <code>aria-label</code> attribute
-                to provide a description of the icon's purpose.
+                <strong>Labeling</strong>: Ensure each icon has an appropriate label for screen readers. Use the <code
+                  >aria-label</code
+                > attribute to provide a description of the icon's purpose.
               </Text>
             </ListItem>
           </List>
@@ -114,11 +92,9 @@ import Text from '../../components/Text.astro'
         <Prose>
           <Heading level={2} text="Available Icons" />
           <Text>
-            To view the list of all available icons that you can use with this
-            component, please visit the <Link href="/resources/available-icons"
-              >Available Icons</Link
-            >. There, you'll find a complete list of icons and examples of how
-            to use them.
+            To view the list of all available icons that you can use with this component, please visit the <Link
+              href="/resources/available-icons">Available Icons</Link
+            >. There, you'll find a complete list of icons and examples of how to use them.
           </Text>
         </Prose>
       </Article>

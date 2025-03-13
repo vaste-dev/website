@@ -123,7 +123,7 @@ export const tableRows = [
     {
       head: 'Default',
       label:
-        "<code>[{ value: '1', label: 'Option 1' },{ value: '2', label: 'Option 2' },{ value: '3', label: 'Option 3' },]</code>",
+        '<code>[{ value: \'1\', label: \'Option 1\' },{ value: \'2\', label: \'Option 2\' },{ value: \'3\', label: \'Option 3\' },]</code>',
     },
   ],
   [

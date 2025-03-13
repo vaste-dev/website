@@ -52,10 +52,10 @@ export const tableHead = ['Attribute', 'Type', 'Description', 'Default']
 
 export const tableRows = [
   [
-    {head: 'Attribute', label:'icon'},
-    {head: 'Type', label:'<code>string</code>'},
-    {head: 'Description', label:'The name of the icon to display.'},
-    {head: 'Default', label:'-'}
+    { head: 'Attribute', label: 'icon' },
+    { head: 'Type', label: '<code>string</code>' },
+    { head: 'Description', label: 'The name of the icon to display.' },
+    { head: 'Default', label: '-' },
   ],
   [
     {

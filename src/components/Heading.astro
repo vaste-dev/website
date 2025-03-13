@@ -17,13 +17,9 @@ const levelClasses = {
   6: 'text-base lg:text-lg',
 }[level]
 
-const gradientClasses = gradient
-  ? 'bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text'
-  : ''
+const gradientClasses = gradient ? 'bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text' : ''
 
-const headingClasses = [levelClasses, gradientClasses, className]
-  .filter(Boolean)
-  .join(' ')
+const headingClasses = [levelClasses, gradientClasses, className].filter(Boolean).join(' ')
 ---
 
 {

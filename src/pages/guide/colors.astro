@@ -80,27 +80,19 @@ body {
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="Colors"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="Colors" />
         <Prose>
           <Text>
-            This section describes the CSS variables that define the color
-            palette used in the components. It also explains how light and dark
-            modes are implemented to enhance user experience.
+            This section describes the CSS variables that define the color palette used in the components. It also
+            explains how light and dark modes are implemented to enhance user experience.
           </Text>
         </Prose>
         <Prose>
           <Heading level={2} text="Color Variables" />
           <Heading level={3} text="Base Variables" />
           <Text>
-            These variables are used to define primary, secondary, dark, and
-            neutral colors. They are applied consistently across the project to
-            maintain a coherent visual identity.
+            These variables are used to define primary, secondary, dark, and neutral colors. They are applied
+            consistently across the project to maintain a coherent visual identity.
           </Text>
           <Heading level={4} text="Variables" />
           <CodeBlock lang="css" code={colorVariables} />
@@ -108,27 +100,23 @@ body {
         <Prose>
           <Heading level={2} text="Color Modes" />
           <Text>
-            To enhance user experience, we use light and dark color modes that
-            adjust automatically based on user preferences or system settings.
-            This is achieved using specific classes and data attributes to
-            determine the current theme.
+            To enhance user experience, we use light and dark color modes that adjust automatically based on user
+            preferences or system settings. This is achieved using specific classes and data attributes to determine the
+            current theme.
           </Text>
           <Heading level={3} text="Light Mode" />
           <CodeBlock lang="css" code={lightModeVariables} />
           <List>
             <ListItem>
               <Text>
-                <strong>Description</strong>: In light mode, we use lighter
-                colors for backgrounds and primary elements, while text and
-                prominent elements are darker.
+                <strong>Description</strong>: In light mode, we use lighter colors for backgrounds and primary elements,
+                while text and prominent elements are darker.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>Color Variables</strong>: Variables <code
-                  >--ac-color-100</code
-                > to <code>--ac-color-700</code> are mapped to lighter colors, ending
-                with <code>--ac-dark</code> for text and important elements.
+                <strong>Color Variables</strong>: Variables <code>--ac-color-100</code> to <code>--ac-color-700</code> are
+                mapped to lighter colors, ending with <code>--ac-dark</code> for text and important elements.
               </Text>
             </ListItem>
           </List>
@@ -137,17 +125,14 @@ body {
           <List>
             <ListItem>
               <Text>
-                <strong>Description</strong>: In dark mode, we use darker colors
-                for backgrounds and lighter colors for text and highlighted
-                elements, reducing visual fatigue in low-light environments.
+                <strong>Description</strong>: In dark mode, we use darker colors for backgrounds and lighter colors for
+                text and highlighted elements, reducing visual fatigue in low-light environments.
               </Text>
             </ListItem>
             <ListItem>
               <Text>
-                <strong>Color Variables</strong>: Variables <code
-                  >--ac-color-100</code
-                > to <code>--ac-color-700</code> are inverted compared to light mode,
-                starting with <code>--ac-dark</code> and ending with <code
+                <strong>Color Variables</strong>: Variables <code>--ac-color-100</code> to <code>--ac-color-700</code> are
+                inverted compared to light mode, starting with <code>--ac-dark</code> and ending with <code
                   >--ac-white</code
                 > for text and important elements.
               </Text>

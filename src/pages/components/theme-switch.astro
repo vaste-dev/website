@@ -1,10 +1,5 @@
 ---
-import {
-  basicUsageCode,
-  importCode,
-  tableHead,
-  tableRows,
-} from '../../data/theme-switch.ts'
+import { basicUsageCode, importCode, tableHead, tableRows } from '../../data/theme-switch.ts'
 import { Tab, TabItem, ThemeSwitch as ThemeSwitchAc } from 'free-astro-components'
 import Article from '../../components/Article.astro'
 import CodeBlock from '../../components/CodeBlock.astro'
@@ -27,35 +22,22 @@ import Text from '../../components/Text.astro'
   <Content>
     <section>
       <Article>
-        <Heading
-          slot="header"
-          level={1}
-          gradient
-          class="inline-block"
-          text="ThemeSwitch"
-        />
+        <Heading slot="header" level={1} gradient class="inline-block" text="ThemeSwitch" />
         <Prose>
           <Text>
-            The ThemeSwitch component allows users to toggle between light and
-            dark themes in your Astro project.
+            The ThemeSwitch component allows users to toggle between light and dark themes in your Astro project.
           </Text>
         </Prose>
         <Prose>
           <Heading level={2} text="Import" />
-          <Text>
-            To use the ThemeSwitch component, first import it into your project:
-          </Text>
+          <Text> To use the ThemeSwitch component, first import it into your project: </Text>
           <CodeBlock lang="astro" code={importCode} />
         </Prose>
         <Prose>
           <Heading level={2} text="Usage" />
-          <Text>
-            Here's how you can use the textarea component in your Astro project:
-          </Text>
+          <Text> Here's how you can use the textarea component in your Astro project: </Text>
           <Heading level={3} text="Basic Usage" />
-          <Text>
-            To create a basic textarea field, use the following code:
-          </Text>
+          <Text> To create a basic textarea field, use the following code: </Text>
           <Tab tabs={[{ label: 'Preview', active: true }, { label: 'Code' }]}>
             <TabItem active>
               <Preview>
@@ -78,9 +60,8 @@ import Text from '../../components/Text.astro'
           <List>
             <ListItem>
               <Text>
-                <strong>Keyboard Accessibility</strong>: Ensure the ThemeSwitch
-                component can be toggled using keyboard interactions (e.g.,
-                Enter key).
+                <strong>Keyboard Accessibility</strong>: Ensure the ThemeSwitch component can be toggled using keyboard
+                interactions (e.g., Enter key).
               </Text>
             </ListItem>
           </List>

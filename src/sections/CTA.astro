@@ -10,9 +10,7 @@ const { title, description, align } = Astro.props
 
 <section class="pb-16 lg:pb-32">
   <div class="container">
-    <div
-      class="bg-gradient-to-r from-primary/50 to-secondary/50 rounded-3xl p-px"
-    >
+    <div class="bg-gradient-to-r from-primary/50 to-secondary/50 rounded-3xl p-px">
       <div
         class:list={[
           'flex flex-col gap-16 bg-neutral-100 rounded-3xl px-8 lg:px-16 xl:px-24 py-16 lg:py-32',
@@ -34,10 +32,7 @@ const { title, description, align } = Astro.props
           {
             description && (
               <p
-                class:list={[
-                  'text-neutral-500 lg:text-lg',
-                  align === 'center' ? 'mx-auto' : '',
-                ]}
+                class:list={['text-neutral-500 lg:text-lg', align === 'center' ? 'mx-auto' : '']}
                 set:html={description}
               />
             )
