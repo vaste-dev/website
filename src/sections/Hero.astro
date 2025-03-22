@@ -22,7 +22,7 @@ const { title, description, align = 'left' } = Astro.props
           title && (
             <h1
               class:list={[
-                'text-[8vw] sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] [&>strong]:font-medium leading-normal',
+                'text-[8vw] sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] [&>strong]:font-medium font-semibold leading-normal',
                 align === 'center' ? 'mx-auto' : '',
               ]}
               set:html={title}
